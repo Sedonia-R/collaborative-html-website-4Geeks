@@ -5,21 +5,27 @@
   <div class="card-body">
     <h5 class="card-title">Contact</h5>
     <p>At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti.</p>
-    <div class="bg-light p-3">
-      <form>
-        <div class="row mb-3">
-          <label for="inputEmail" class="col-2 col-form-label">Email</label>
-          <div class="col-8">
-            <input type="email" class="form-control" id="inputEmail">
+    <div class="bg-light p-3 container-fluid border rounded">
+      <form class="justify-content-end">
+        <div class="row mb-3 container-fluid p-0">
+          <div class="col-2"></div>
+          <label class="col-3 col-form-label p-0">Your Email:</label>
+          <div class="col-7 container-fluid p-0">
+            <input type="text-area" class="col-12" id="inputEmail" placeholder="Your email">
           </div>
         </div>
-        <div class="row mb-3">
-          <label for="inputPassword" class="col-2 col-form-label">Password</label>
-          <div class="col-8">
-            <input type="password" class="form-control" id="inputPassword">
+        <div class="row mb-3 container-fluid p-0">
+          <div class="col-2"></div>
+          <label class="col-3 p-0 col-form-label">Your Message:</label>
+          <div class="col-7 form-floating p-0">
+            <textarea id="textarea" class="col-12 rounded-1" placeholder="Please enter your message here..."></textarea>
           </div>
         </div>
-        <button type="submit" class="btn btn-primary">Sign in</button>
+        <div class="row">
+          <div class="col-8"></div>
+          <button type="submit" class="btn btn-primary col-3">Submit</button>
+          <div class="col-1 p-0"></div>
+        </div>
       </form>
     </div>
   </div>
